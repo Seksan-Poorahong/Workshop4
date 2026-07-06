@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <p id="first">ยินดีต้อนรับ</p>
+        <p>นักศึกษาจะได้เรียนรู้</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h1>Nakhon Pathom Rajaphat university</h1>
+        <img src="shocked-face-shocked-meme.gif" alt="อึ้ง">
+        <script>
+//            const element=document.getElementById("first");
+            const element = document.querySelector("#first");
+            element.textContent += "ยินดีต้อนรับสู่เว็บไซต์ของสาขาวิชา";
+            const element1 = document.querySelector("h1");
+            element1.textContent="สาขาวิชาวิทยาการคอมพิวเตอร์";
+            element1.style.color="red"
+            const element2 = document.querySelectorAll("p");
+            element2.forEach((paragraph) => {
+                paragraph.textContent = "หลักสูตรวิทยาศาสตร์บัณฑิตสาขาวิชาวิทยการคอมพิวเตอร์";
+                paragraph.style.fontSize="20px"
+            });
+            const element3=document.querySelector(".forth");
+            element3.innerHTML="<h2>NPRU</h2>";
+            const imgElem = document.querySelector("img");
+            imgElem.setAttribute("height", 300);
+            imgElem.src = "https://marketeeronline.co/archives/369829";
+            const newH2 = document.createElement("h2");
+            newH2.textContent = "Computer Scirence @ NPRU";
+            const newelem=body.appendChild(newH2);
+            newelem.remove();
+        </script>
+    </body>
+</html>

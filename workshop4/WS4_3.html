@@ -1,0 +1,19 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <textarea></textarea>
+        <p>Character count: <span id="count">0</span></p>
+        <button>sumbit</button>
+        <script>
+            const textarea = document.querySelector("textarea");
+            const b = document.querySelector("button");
+            const p = document.querySelector("p");
+            b.addEventListener("click",()=>{
+                p.textContent = "Character count: " + textarea.value.length;
+            })
+        </script> 
+    </body> 
+</html>
